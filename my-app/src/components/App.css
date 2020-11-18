@@ -1,0 +1,231 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "Roboto";
+}
+
+button {
+  border: none;
+  outline: none;
+  width: 100%;
+  padding: 15px 0;
+  color: #fff;
+  font-size: 16px;
+  letter-spacing: 1px;
+  cursor: pointer;
+}
+
+.login {
+  width: 100%;
+  min-height: 100vh;
+  padding: 0 20px;
+  background: #e9e9e9;
+  display: flex;
+}
+
+.login .loginContainer {
+  padding: 60px;
+  margin: auto;
+  width: 100%;
+  max-width: 520px;
+  min-height: 600px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background: rgba(38, 20, 72, 0.9) 59%;
+  box-shadow: 0 50px 70px -20px rgba(0, 0, 0, 0.8);
+  border-radius: 5px;
+}
+
+.login .loginContainer label {
+  color: white;
+  margin: 14px 0;
+  display: block;
+  font-size: 22px;
+  line-height: 1;
+}
+
+.login .loginContainer input {
+  width: 100%;
+  border: none;
+  outline: none;
+  font-size: 19px;
+  padding: 10px;
+  background: rgba(255, 255, 255, 0.1);
+  color: #fff;
+  letter-spacing: 1px;
+}
+
+.login .loginContainer .btnContainer {
+  width: 100%;
+  padding: 24px 0;
+}
+
+.login .loginContainer .btnContainer p {
+  margin: 14px 0 0 0;
+  text-align: right;
+  color: #fff;
+}
+
+.login .loginContainer .btnContainer p span {
+  color: yellow;
+  font-weight: 500;
+  letter-spacing: 0.5px;
+  margin-left: 5px;
+  cursor: pointer;
+  transition: all 400ms ease-in-out;
+}
+
+.login .loginContainer .btnContainer p span:hover {
+  color: red;
+}
+
+.login .loginContainer .errorMsg {
+  color: red;
+  font-size: 16px;
+}
+
+.hero {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  background: #fff;
+}
+
+.hero nav {
+  background: rgb(78, 133, 235);
+  width: 100%;
+  height: 7vh;
+  padding: 20px 40px;
+  align-items: center;
+  justify-content: space-between;
+  display: flex;
+}
+
+.hero nav h2 {
+  color: #fff;
+}
+
+.hero nav button {
+  width: 86px;
+  padding: 8px 0;
+}
+
+.container {
+  background-color: #e5e5e5;
+  margin: 1% 7%;
+  border-radius: 5px;
+  text-align: center;
+  padding: 10px;
+  width: 80%;
+  height: 89vh;
+  overflow-y: scroll;
+}
+
+.addShipmentButton {
+  width: 220px;
+  height: 45px;
+}
+
+.sideNav {
+  background-color: #fca311;
+  width: 30vh;
+  height: 93vh;
+  text-align: center;
+  margin: auto;
+  padding: 10px;
+}
+.flexRow {
+  display: flex;
+  flex-direction: row;
+  min-height: 93vh;
+}
+
+.container ul {
+  list-style-type: none;
+}
+
+.container li {
+  display: flex;
+  border: solid 1px;
+  border-radius: 10px;
+  margin: 5px auto;
+  height: 55px;
+  padding: 10px;
+  font-size: 17px;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.logoMulticco {
+  width: 19vh;
+}
+
+.trader {
+  height: 45px;
+  width: 145px;
+  border: solid 1px;
+  border-radius: 10px;
+  margin: 4px;
+}
+
+.client {
+  height: 45px;
+  width: 145px;
+  border: solid 1px;
+  border-radius: 10px;
+  margin: 4px;
+}
+
+.route {
+  height: 45px;
+  width: 145px;
+  border: solid 1px;
+  border-radius: 10px;
+  margin: 4px;
+}
+
+.goods {
+  height: 45px;
+  width: 145px;
+  border: solid 1px;
+  border-radius: 10px;
+  margin: 4px;
+}
+
+.haulier {
+  height: 45px;
+  width: 145px;
+  border: solid 1px;
+  border-radius: 10px;
+  margin: 4px;
+}
+
+.notes {
+  height: 45px;
+  width: 145px;
+  border: solid 1px;
+  border-radius: 10px;
+  margin: 4px;
+}
+
+.loadingDate {
+  height: 45px;
+  width: 145px;
+  border: solid 1px;
+  border-radius: 10px;
+  margin: 4px;
+}
+
+.unloadingDate {
+  height: 45px;
+  width: 145px;
+  border: solid 1px;
+  border-radius: 10px;
+  margin: 4px;
+}
+
+.formInput {
+  width: 220px;
+}
