@@ -5,26 +5,30 @@ import ToggleButtons from "./ToggleButtons";
 
 const ShipmentDetails = ({ shipment }) => {
   const { removeShipment } = useContext(ShipmentContext);
-
+  console.log(shipment.selectedLoadingDate);
   return (
     <li>
-      <div className="trader">{shipment.trader}</div>
-      <div className="client">{shipment.client}</div>
-      <div className="haulier">{shipment.haulier}</div>
-      <div className="route">{shipment.route}</div>
-      <div className="goods">{shipment.goods}</div>
-      <div className="loadingDate">
-        {JSON.stringify(shipment.selectedLoadingDate).slice(1, 11)}
+      <div className="item">{shipment.trader}</div>
+      <div className="item">{shipment.client}</div>
+      <div className="item">{shipment.haulier}</div>
+      <div className="item">{shipment.route}</div>
+      <div className="item">{shipment.goods}</div>
+      <div className="item">
+        {shipment.selectedLoadingDate.toISOString().slice(0, 10)}
       </div>
-      <div className="unloadingDate">
-        {JSON.stringify(shipment.selectedUnloadingDate).slice(1, 11)}
+      <div className="item">
+        {shipment.selectedUnloadingDate.toISOString().slice(0, 10)}
       </div>
-      <ToggleButtons />
-      <div className="notes">{shipment.notes}</div>
-      <DeleteIcon
-        onClick={() => removeShipment(shipment.id)}
-        cursor="pointer"
-      />
+      <div className="item">
+        <ToggleButtons />
+      </div>
+      <div className="item">{shipment.notes}</div>
+      <div className="item">
+        <DeleteIcon
+          onClick={() => removeShipment(shipment.id)}
+          cursor="pointer"
+        />
+      </div>
     </li>
   );
 };

@@ -148,10 +148,10 @@ button {
 
 .container li {
   display: flex;
-  border: solid 1px;
-  border-radius: 10px;
-  margin: 5px auto;
-  height: 55px;
+  border: solid 1px #ccc;
+  border-radius: 4px;
+  margin: 10px auto;
+  /* height: 55px; */
   padding: 10px;
   font-size: 17px;
   align-items: center;
@@ -178,20 +178,20 @@ button {
   margin: 4px;
 }
 
-.route {
-  height: 45px;
-  width: 145px;
-  border: solid 1px;
-  border-radius: 10px;
-  margin: 4px;
+.item {
+  min-height: 70px;
+  width: 155px;
+  border-right: 1px solid #ccc;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 8px;
 }
 
-.goods {
-  height: 45px;
-  width: 145px;
-  border: solid 1px;
-  border-radius: 10px;
-  margin: 4px;
+.item:last-child {
+  width: auto;
+  border-right: none;
 }
 
 .haulier {

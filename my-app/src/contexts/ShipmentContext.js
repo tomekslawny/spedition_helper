@@ -24,8 +24,8 @@ const ShipmentContextProvider = (props) => {
       id: uuidv1(),
       haulier: "Kris-Trans",
       notes: "dodać CMR",
-      selectedLoadingDate: new Date().toISOString().slice(0, 10),
-      selectedUnloadingDate: new Date().toISOString().slice(0, 10),
+      selectedLoadingDate: new Date(),
+      selectedUnloadingDate: new Date(),
     },
     {
       trader: "Filipek",
@@ -35,8 +35,8 @@ const ShipmentContextProvider = (props) => {
       id: uuidv1(),
       haulier: "Marpol",
       notes: "odprawa celna",
-      selectedLoadingDate: new Date().toISOString().slice(0, 10),
-      selectedUnloadingDate: new Date().toISOString().slice(0, 10),
+      selectedLoadingDate: new Date(),
+      selectedUnloadingDate: new Date(),
     },
   ]);
   const addShipment = (

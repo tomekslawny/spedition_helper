@@ -11,6 +11,7 @@ const Shipments = () => {
         {shipments
           .sort((a, b) => b.selectedUnloadingDate - a.selectedUnloadingDate)
           .map((shipment) => {
+            console.log(shipment);
             return <ShipmentDetails shipment={shipment} key={shipment.id} />;
           })}
       </ul>
