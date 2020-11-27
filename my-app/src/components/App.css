@@ -145,10 +145,10 @@ button {
 
 .container li {
   display: flex;
-  border: solid 1px;
-  border-radius: 3px;
-  margin: 5px auto;
-  height: 55px;
+  border: solid 1px #ccc;
+  border-radius: 4px;
+  margin: 10px auto;
+  /* height: 55px; */
   padding: 10px;
   font-size: 17px;
   align-items: center;

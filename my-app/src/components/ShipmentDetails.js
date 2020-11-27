@@ -5,7 +5,7 @@ import ToggleButtons from "./ToggleButtons";
 
 const ShipmentDetails = ({ shipment }) => {
   const { removeShipment } = useContext(ShipmentContext);
-
+  console.log(shipment.selectedLoadingDate);
   return (
     <li>
       <div className="item">{shipment.trader}</div>
@@ -19,12 +19,16 @@ const ShipmentDetails = ({ shipment }) => {
       <div className="item">
         {shipment.selectedUnloadingDate.toISOString().slice(0, 10)}
       </div>
-      <ToggleButtons />
+      <div className="item">
+        <ToggleButtons />
+      </div>
       <div className="item">{shipment.notes}</div>
-      <DeleteIcon
-        onClick={() => removeShipment(shipment.id)}
-        cursor="pointer"
-      />
+      <div className="item">
+        <DeleteIcon
+          onClick={() => removeShipment(shipment.id)}
+          cursor="pointer"
+        />
+      </div>
     </li>
   );
 };
