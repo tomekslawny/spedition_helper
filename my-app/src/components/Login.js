@@ -15,8 +15,14 @@ const Login = (props) => {
     passwordError,
   } = props;
 
+  const handleKeyPress = (event) => {
+    if (event.key === "Enter") {
+      handleSignup();
+    }
+  };
+
   return (
-    <section className="login">
+    <form className="login">
       <div className="loginContainer">
         <label>Nazwa użytkownika</label>
         <input
@@ -25,6 +31,7 @@ const Login = (props) => {
           required
           value={email}
           onChange={(e) => setEmail(e.target.value)}
+          // onKeyPress={handleKeyPress}
         />
         <p className="errorMsg">{emailError}</p>
         <label>Hasło</label>
@@ -51,9 +58,11 @@ const Login = (props) => {
           ) : (
             <>
               <Button
+                type={"submit"}
                 variant="contained"
                 color="primary"
                 onClick={handleSignup}
+                onKeyPress={handleKeyPress}
               >
                 Zarejestruj
               </Button>
@@ -67,7 +76,7 @@ const Login = (props) => {
           )}
         </div>
       </div>
-    </section>
+    </form>
   );
 };
 
