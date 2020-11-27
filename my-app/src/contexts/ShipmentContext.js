@@ -5,17 +5,6 @@ export const ShipmentContext = createContext();
 
 const ShipmentContextProvider = (props) => {
   const [shipments, setShipments] = useState([
-    // {
-    //   trader: "Handlowiec",
-    //   client: "Klient",
-    //   route: "Trasa",
-    //   goods: "Towar",
-    //   id: uuidv1(),
-    //   haulier: "Przewoźnik",
-    //   notes: "Notatki",
-    //   selectedLoadingDate: "Data",
-    //   selectedUnloadingDate: new Date().toISOString().slice(0, 10),
-    // },
     {
       trader: "Tommy Slavko",
       client: "Loyal Cargo Solutions",
@@ -24,8 +13,8 @@ const ShipmentContextProvider = (props) => {
       id: uuidv1(),
       haulier: "Kris-Trans",
       notes: "dodać CMR",
-      selectedLoadingDate: new Date().toISOString().slice(0, 10),
-      selectedUnloadingDate: new Date().toISOString().slice(0, 10),
+      selectedLoadingDate: new Date(),
+      selectedUnloadingDate: new Date(),
     },
     {
       trader: "Filipek",
@@ -35,8 +24,8 @@ const ShipmentContextProvider = (props) => {
       id: uuidv1(),
       haulier: "Marpol",
       notes: "odprawa celna",
-      selectedLoadingDate: new Date().toISOString().slice(0, 10),
-      selectedUnloadingDate: new Date().toISOString().slice(0, 10),
+      selectedLoadingDate: new Date(),
+      selectedUnloadingDate: new Date(),
     },
   ]);
   const addShipment = (

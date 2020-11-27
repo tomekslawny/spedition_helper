@@ -8,6 +8,17 @@ import { plPL } from "@material-ui/core/locale";
 
 const theme = createMuiTheme(
   {
+    overrides: {
+      MuiToggleButton: {
+        root: {
+          borderColor: "#000",
+          borderRadius: "3px",
+          height: "45px;",
+          color: "#000",
+          fontWeight: "400",
+        },
+      },
+    },
     palette: {
       primary: {
         main: "#794B01",

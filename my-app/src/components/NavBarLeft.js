@@ -143,6 +143,7 @@ const NavBarLeft = () => {
             margin="dense"
           />
           <KeyboardDatePicker
+            autoOk={true}
             className="formInput"
             variant="inline"
             format="dd/MM/yyyy"
@@ -156,6 +157,7 @@ const NavBarLeft = () => {
             }}
           />
           <KeyboardDatePicker
+            autoOk={true}
             className="formInput"
             variant="inline"
             format="dd/MM/yyyy"
